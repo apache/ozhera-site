@@ -5,3 +5,6 @@ github:
     - apache
     - ozhera
     - website
+
+publish:
+  whoami: asf-site

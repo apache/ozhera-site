@@ -10,22 +10,14 @@ const { frontmatter } = useData();
   <div class="VPHome">
     <CustomizeOzHera
       v-if="frontmatter.ozHera"
-      class="CustomizeOzHera"
       :ozHeraData="frontmatter.ozHera"
     />
 
     <CustomizeFeatures
       v-if="frontmatter.features"
-      class="customizeFeatures"
       :features="frontmatter.features"
     />
   </div>
 </template>
 
-<style scoped>
-@media (min-width: 768px) {
-  .VPHome {
-    margin-bottom: 128px;
-  }
-}
-</style>
+<style scoped></style>

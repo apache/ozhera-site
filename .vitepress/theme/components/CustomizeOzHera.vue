@@ -1,9 +1,9 @@
 <template>
-  <div class="VPOzHera">
-    <div class="OzHera-item column">
+  <div class="customizeOzHera">
+    <div class="ozHera-item column">
       <div class="container">
-        <div class="OzHera-item-title">{{ ozHeraData?.title }}</div>
-        <div class="OzHera-item-content">
+        <div class="ozHera-item-title">{{ ozHeraData?.title }}</div>
+        <div class="ozHera-item-content">
           <p>
             {{ ozHeraData?.desc }}
           </p>
@@ -15,7 +15,7 @@
             class="action"
           >
             <VPButton
-              class="OzHera-item-btn"
+              class="ozHera-item-btn"
               tag="a"
               size="medium"
               :theme="action.theme"
@@ -33,7 +33,7 @@
         /> -->
       </div>
     </div>
-    <div class="OzHera-item column">
+    <div class="ozHera-item column">
       <div class="container">
         <img :src="ozHeraData?.image.src" :alt="ozHeraData?.alt" />
       </div>
@@ -54,21 +54,17 @@ function handleClick() {
 }
 </script>
 <style scoped>
-.VPOzHera {
-  position: relative;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1152px;
 }
-.OzHera-item {
+.ozHera-item {
   display: inline-block;
   padding-top: 40px;
   line-height: 1.5;
   width: 100%;
 }
-.OzHera-item:nth-child(1) {
+.ozHera-item:nth-child(1) {
   padding-top: 64px;
 }
 img {
@@ -76,18 +72,19 @@ img {
   padding-top: 64px;
   margin: 0 auto;
 }
-.OzHera-item-title {
+.ozHera-item-title {
   color: #50bffe;
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
   word-break: break-all;
 }
-.OzHera-item-content {
+.ozHera-item-content {
   color: var(--vp-c-text-1);
   font-size: 24px;
+  line-height: 1.8;
 }
-.OzHera-item-btn {
+.ozHera-item-btn {
   background-color: #5974ce;
   border-radius: 20px;
   padding: 4px 14px;
@@ -100,7 +97,7 @@ img {
   .column {
     padding: 0 24px;
   }
-  .OzHera-item-title.OzHera-item-title.OzHera-item-title {
+  .ozHera-item-title.ozHera-item-title.ozHera-item-title {
     font-size: 36px;
   }
 }

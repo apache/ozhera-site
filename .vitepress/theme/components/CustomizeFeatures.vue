@@ -17,7 +17,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div v-if="features" class="VPfeatures">
+  <div class="customizeFeatures">
     <div class="container">
       <div class="title">{{ features.title }}</div>
       <div class="items">
@@ -40,24 +40,24 @@ const props = defineProps<{
 </template>
 
 <style scoped>
-.VPfeatures {
-  margin: 64px 0 0 0;
+.customizeFeatures {
+  margin: 80px 0 0 0;
   background-color: var(--vp-c-bg-soft);
 }
 
 @media (max-width: 640px) {
-  .VPfeatures {
+  .customizeFeatures {
     padding: 0 24px;
   }
 }
 @media (min-width: 640px) {
-  .VPfeatures {
+  .customizeFeatures {
     padding: 0 48px;
   }
 }
 
 @media (min-width: 960px) {
-  .VPfeatures {
+  .customizeFeatures {
     padding: 0 64px;
   }
 }
@@ -67,11 +67,12 @@ const props = defineProps<{
   max-width: 1152px;
 }
 .title {
-  font-size: 32px;
-  font-weight: 600;
+  padding: 80px 0 60px 0;
+  line-height: 1;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
   text-align: center;
-  padding-bottom: 40px;
-  padding-top: 40px;
 }
 .items {
   display: flex;
@@ -101,7 +102,7 @@ const props = defineProps<{
 .item-img {
   width: 26px;
   margin-right: 30px;
-  background-color: #fff;
+  background-color: #f6f6f7;
 }
 .item-content {
   width: 100%;
@@ -110,8 +111,11 @@ const props = defineProps<{
 .item-content-title {
   color: var(--vp-c-text-1);
   padding-bottom: 6px;
+  font-size: 20px;
+  font-weight: 700;
 }
 .item-content-detail {
-  color: var(--vp-c-text-2);
+  color: var(--vp-c-text-3);
+  font-size: 14px;
 }
 </style>

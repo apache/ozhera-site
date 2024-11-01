@@ -34,8 +34,11 @@
       </div>
     </div>
     <div class="ozHera-item column">
-      <div class="container">
-        <img :src="ozHeraData?.image.src" :alt="ozHeraData?.alt" />
+      <div class="container img-container">
+        <div class="img">
+          <img :src="ozHeraData?.image.src" :alt="ozHeraData?.image.alt"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -43,12 +46,21 @@
 
 <script lang="ts" setup>
 import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vue";
-const props = defineProps({
+const props = defineProps<{
   ozHeraData: {
-    type: Object,
-    deault: () => {},
-  },
-});
+    title: string;
+    desc: string;
+    image: {
+      src: string;
+      alt: string;
+    };
+    actions: {
+      theme: string;
+      text: string;
+      link: string;
+    }[];
+  };
+}>();
 function handleClick() {
   window.location.href = `${window.location.origin}/en/guide/quick-start.html`;
 }
@@ -66,11 +78,6 @@ function handleClick() {
 }
 .ozHera-item:nth-child(1) {
   padding-top: 64px;
-}
-img {
-  box-shadow: 0 8px 16px 0 #0000000d;
-  padding-top: 64px;
-  margin: 0 auto;
 }
 .ozHera-item-title {
   color: #50bffe;
@@ -93,6 +100,21 @@ img {
   margin: 60px 0;
   cursor: pointer;
 }
+.img-container {
+  padding-top: 64px;
+}
+
+.img-container .img {
+  box-shadow: 0 8px 16px 0 #0000000d;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dark .img-container .img {
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.3);
+}
+
 @media (max-width: 640px) {
   .column {
     padding: 0 24px;

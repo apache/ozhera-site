@@ -12,7 +12,10 @@ export interface Feature {
 }
 
 const props = defineProps<{
-  features: Feature[];
+  features: {
+    title: string;
+    items: Feature[];
+  };
 }>();
 </script>
 
@@ -64,6 +67,7 @@ const props = defineProps<{
 
 .container {
   margin: 0 auto;
+  padding-bottom: 40px;
   max-width: 1152px;
 }
 .title {
@@ -82,10 +86,9 @@ const props = defineProps<{
 .item {
   min-height: 140px;
   box-sizing: border-box;
-  padding: 8px 8px 32px 8px;
+  padding: 8px 8px 40px 8px;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
 }
 
 @media (max-width: 640px) {
@@ -100,7 +103,12 @@ const props = defineProps<{
   }
 }
 .item-img {
-  width: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-top: 20px;
   margin-right: 30px;
   background-color: #f6f6f7;
 }
@@ -110,7 +118,7 @@ const props = defineProps<{
 }
 .item-content-title {
   color: var(--vp-c-text-1);
-  padding-bottom: 6px;
+  padding-bottom: 20px;
   font-size: 20px;
   font-weight: 700;
 }

@@ -34,3 +34,8 @@ pnpm run docs:dev
 ```bash
 pnpm run docs:build
 ```
+## deploy
+
+merge code to **preview** branch, Visit https://ozhera.staged.apache.org/.
+
+merge code to **asf-site** branch, Visit https://ozhera.apache.org/en/. Note that not everyone has permission to merge code into the asf-site branch.

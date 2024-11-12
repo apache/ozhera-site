@@ -1,9 +1,11 @@
 <script setup>
-import { useData } from 'vitepress'
-import HomeHero from './HomeHero.vue'
-import VPFeatures from './Features.vue'
+import { useData } from "vitepress";
+import HomeHero from "./HomeHero.vue";
+import VPFeatures from "./Features.vue";
+import CustomizeOzHera from "./CustomizeOzHera.vue";
+import CustomizeFeatures from "./CustomizeFeatures.vue";
 
-const { frontmatter: fm } = useData()
+const { frontmatter: fm } = useData();
 </script>
 
 <template>
@@ -19,6 +21,16 @@ const { frontmatter: fm } = useData()
   <VPFeatures
     v-if="fm.features"
     class="VPHomeFeatures"
+    :features="fm.features"
+  />
+  <CustomizeOzHera
+    v-if="fm.ozHera"
+    class="CustomizeOzHera"
+    :ozHeraData="fm.ozHera"
+  />
+  <CustomizeFeatures
+    v-if="fm.features"
+    class="CustomizeFeatures"
     :features="fm.features"
   />
 </template>

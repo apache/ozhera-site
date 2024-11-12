@@ -49,6 +49,40 @@ export default [
     ]
   },
   {
+    text: 'ASF',
+    activeMatch: "^/info/",
+    items: [
+      {
+        text: 'Foundation',
+        link: 'https://www.apache.org/'
+      },
+      {
+        text: 'License',
+        link: 'https://www.apache.org/licenses/'
+      },
+      {
+        text: 'Events',
+        link: 'https://events.apache.org/'
+      },
+      {
+        text: 'Sponsor',
+        link: 'https://www.apache.org/foundation/sponsorship.html'
+      },
+      {
+        text: 'Privacy',
+        link: 'https://privacy.apache.org/policies/privacy-policy-public.html'
+      },
+      {
+        text: 'Security',
+        link: 'https://www.apache.org/security/'
+      },
+      {
+        text: 'Thanks',
+        link: 'https://www.apache.org/foundation/sponsors'
+      },
+    ]
+  },
+  {
     text: '关于',
     activeMatch: `^/zh/about/`,
     items: [

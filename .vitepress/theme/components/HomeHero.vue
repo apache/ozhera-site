@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import VPButton from 'vitepress/dist/client/theme-default/components/VPButton.vue'
+import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vue";
 
 export interface HeroAction {
-  theme?: 'brand' | 'alt'
-  text: string
-  link: string
+  theme?: "brand" | "alt";
+  text: string;
+  link: string;
 }
 
 defineProps<{
-  name?: string
-  text?: string
-  tagline?: string
-  actions?: HeroAction[]
-}>()
+  name?: string;
+  text?: string;
+  tagline?: string;
+  actions?: HeroAction[];
+}>();
 </script>
 
 <template>
@@ -45,19 +45,28 @@ defineProps<{
 
 <style scoped>
 .VPHero {
-  margin-top: calc((var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) * -1);
-  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 24px 48px;
+  margin-top: calc(
+    (var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) * -1
+  );
+  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px)
+    24px 48px;
 }
 
 @media (min-width: 640px) {
   .VPHero {
-    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px) 48px 64px;
+    padding: calc(
+        var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px
+      )
+      48px 64px;
   }
 }
 
 @media (min-width: 960px) {
   .VPHero {
-    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px) 64px 64px;
+    padding: calc(
+        var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px
+      )
+      64px 64px;
   }
 }
 
@@ -77,7 +86,7 @@ defineProps<{
 .main {
   position: relative;
   width: 100%;
-  z-index: 10;
+  /* z-index: 10; */
   order: 2;
   flex-grow: 1;
   flex-shrink: 0;

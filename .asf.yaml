@@ -6,6 +6,5 @@ github:
     - ozhera
     - website
 
-staging:
-  profile: ~
-  whoami: preview
+publish:
+  whoami: asf-site

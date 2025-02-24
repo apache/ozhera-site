@@ -6,5 +6,9 @@ github:
     - Apache OzHera(Incubating)
     - website
 
+staging:
+  profile: ~
+  whoami: preview
+
 publish:
   whoami: asf-site

@@ -23,7 +23,7 @@ export default defineConfig({
           message:
             '<div class="footer-incubator"><div><a href="https://incubator.apache.org/" target="_blank"><img src="/images/apache/incubator.svg" alt="Apache Incubator Logo"></a></div></div><div class="footer-message">Apache OzHera (Incubating) is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by the Apache Incubator. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.</div>',
           copyright:
-            '<div class="footer-copyright">Copyright © 2023-2024, The Apache Software Foundation Apache OzHera, OzHera, Apache, Apache Incubator, the Apache feather, the Apache Incubator logo and the Apache OzHera project logo are either registered trademarks or trademarks of the Apache Software Foundation.</div>',
+            '<div class="footer-copyright">Copyright © 2023-2025, The Apache Software Foundation Apache OzHera, OzHera, Apache, Apache Incubator, the Apache feather, the Apache Incubator logo and the Apache OzHera project logo are either registered trademarks or trademarks of the Apache Software Foundation.</div>',
         },
       },
     },
@@ -38,7 +38,7 @@ export default defineConfig({
           message:
             '<div class="footer-incubator"><div><a href="https://incubator.apache.org/" target="_blank"><img src="/images/apache/incubator.svg" alt="Apache Incubator Logo"></a></div></div><div class="footer-message">Apache OzHera (Incubating) is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by the Apache Incubator. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.</div>',
           copyright:
-            '<div class="footer-copyright">Copyright © 2023-2024, The Apache Software Foundation Apache OzHera, OzHera, Apache, Apache Incubator, the Apache feather, the Apache Incubator logo and the Apache OzHera project logo are either registered trademarks or trademarks of the Apache Software Foundation.</div>',
+            '<div class="footer-copyright">Copyright © 2023-2025, The Apache Software Foundation Apache OzHera, OzHera, Apache, Apache Incubator, the Apache feather, the Apache Incubator logo and the Apache OzHera project logo are either registered trademarks or trademarks of the Apache Software Foundation.</div>',
         },
       },
     },

@@ -1,10 +1,14 @@
 github:
-  description: "Website sources for the Apache OzHera website"
+  description: "Website sources for the Apache OzHera(Incubating) website"
   homepage: https://ozhera.apache.org/
   labels:
     - apache
-    - ozhera
+    - Apache OzHera(Incubating)
     - website
+
+staging:
+  profile: ~
+  whoami: preview
 
 publish:
   whoami: asf-site

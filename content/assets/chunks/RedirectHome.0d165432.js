@@ -1,1 +1,0 @@
-import{d as e,o,c as n}from"./framework.4fd28da9.js";const i=e({__name:"RedirectHome",setup(t){return window.location.href=`${window.location.origin}/en/`,(c,r)=>(o(),n("div"))}});export{i as default};

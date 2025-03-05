@@ -62,7 +62,7 @@ export default [
       },
       {
         text: 'Events',
-        link: 'https://events.apache.org/'
+        link: 'https://www.apache.org/events/current-event'
       },
       {
         text: 'Sponsor',

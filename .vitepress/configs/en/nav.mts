@@ -37,6 +37,11 @@ export default [
     ]
   },
   {
+    text: 'Download',
+    activeMatch: `^/en/download/`,
+    link: '/en/download/'
+  },
+  {
     text: 'ASF',
     activeMatch: "^/info/",
     items: [

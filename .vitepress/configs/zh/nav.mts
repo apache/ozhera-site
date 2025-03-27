@@ -49,6 +49,11 @@ export default [
     ]
   },
   {
+    text: '下载',
+    activeMatch: `^/zh/download/`,
+    link: '/zh/download/'
+  },
+  {
     text: 'ASF',
     activeMatch: "^/info/",
     items: [

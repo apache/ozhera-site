@@ -22,11 +22,11 @@ downloads:
   - version: 2.2.5-incubating
     date: 2024-03-26
     source:
-      url: https://downloads.apache.org/incubator/ozhera/2.2.5-incubating/apache-ozhera-2.2.5-incubating-src.tar.gz
+      url: https://www.apache.org/dyn/closer.lua/incubator/ozhera/2.2.5-incubating/apache-ozhera-2.2.5-incubating-src.tar.gz?action=download
       asc: https://downloads.apache.org/incubator/ozhera/2.2.5-incubating/apache-ozhera-2.2.5-incubating-src.tar.gz.asc
       sha512: https://downloads.apache.org/incubator/ozhera/2.2.5-incubating/apache-ozhera-2.2.5-incubating-src.tar.gz.sha512
     binary:
-      url: https://downloads.apache.org/incubator/ozhera/2.2.5-incubating/apache-ozhera-2.2.5-incubating-bin.tar.gz
+      url: https://www.apache.org/dyn/closer.lua/incubator/ozhera/2.2.5-incubating/apache-ozhera-2.2.5-incubating-bin.tar.gz?action=download
       asc: https://downloads.apache.org/incubator/ozhera/2.2.5-incubating/apache-ozhera-2.2.5-incubating-bin.tar.gz.asc
       sha512: https://downloads.apache.org/incubator/ozhera/2.2.5-incubating/apache-ozhera-2.2.5-incubating-bin.tar.gz.sha512
     releaseNotes: https://github.com/apache/ozhera/releases
